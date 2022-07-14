@@ -24,7 +24,7 @@ public class SaldoBanco {
             System.out.println(("Você teve uma movimentação na sua conta de "+i+". Seu saldo atual é: "+saldo));
             System.out.println("------------------------------");
         }
-        System.out.println("Seu credito é: "+c+". Seu débito é: "+d+". O saldo final é: "+saldo+".");
+    System.out.println("Seu credito é: "+c+". Seu débito é: "+d+". O saldo final é: "+saldo+".");
     }
 }   
 

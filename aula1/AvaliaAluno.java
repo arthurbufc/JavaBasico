@@ -15,7 +15,7 @@ public class AvaliaAluno {
         * 
          */
         if (skl = false) {
-            media = ((nota1+(nota1*fator1)) + nota2 + nota3)/3;
+            media = ((nota1+(nota1*fator2)) + nota2 + nota3)/3;
             if (media >= 7){
                 System.out.println("Aluno aprovado com média: "+media);
             }
@@ -24,7 +24,7 @@ public class AvaliaAluno {
             }
         }
         else{
-            media = ((nota1+(nota1*fator2)) + nota2 + nota3)/3;
+            media = ((nota1+(nota1*fator1)) + nota2 + nota3)/3;
             if (media >= 7){
                 System.out.println("Aluno aprovado com média: "+media);
             }
