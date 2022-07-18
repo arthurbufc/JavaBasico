@@ -32,7 +32,6 @@ public class Carro {
             return false;
         }
     }
-   
 
     //#endregion
 
