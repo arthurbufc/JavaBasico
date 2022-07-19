@@ -17,7 +17,7 @@ public class principal {
         a1.setTelefone("(21)99999-6099");
         a1.setCpf("506.632.855-15");
         a1.setCurso("Java Spring Web");
-        double[] notas = {3.5,4.5,5.5,6.3,9.7};
+        double[] notas = {3.5,4.5,5.5};
         a1.setNotas(notas);
 
         System.out.println(p1.montaHolerite());

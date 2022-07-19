@@ -34,5 +34,6 @@ public class Professor  extends Pessoa {
         holerite += ("| Curso referente: "+ this.getNomeCurso() + System.lineSeparator());
         return holerite;
     }
+    
     //#endregion
 }

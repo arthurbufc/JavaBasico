@@ -21,8 +21,16 @@ public class Aluno extends Pessoa {
     //#endregion
     
     //#region
-    private double calculaMedia(){
 
+    private boolean verificaNotas(){
+        if (notas.length < 3 && notas.length > 10){
+            return true;
+        }else{
+            return false;
+        }
+    }
+
+    private double calculaMedia(){
         double media = 0;
         for(int i=0;i<this.notas.length;i++){
             media +=notas[i]; 
@@ -40,21 +48,25 @@ public class Aluno extends Pessoa {
     
     public String montaBoletim() {
         String boletim = "Nome do aluno: "+super.getNome()+System.lineSeparator();
-        if(this.verificaAprovacao(this.calculaMedia())== false){
-            boletim += (System.lineSeparator()+"Devido a política da academia, o resultado está disponível on-line.");
+        if (this.verificaNotas() == true){
+            if(this.verificaAprovacao(this.calculaMedia())== false){
+                boletim += (System.lineSeparator()+"Devido a política da academia, o resultado está disponível on-line.");
 
-        }else{
-            boletim +=(
-                "CPF: "+super.getCpf()
-                +System.lineSeparator()
-                +System.lineSeparator());
-                for(int i=0;i<this.notas.length;i++){
-                    boletim += (" avaliacao: "+this.notas[i]+" | "+System.lineSeparator());
-                }
-                boletim += ("Resultado: Aprovad.o"+System.lineSeparator());
-                boletim += ("Media final: "+this.calculaMedia()+System.lineSeparator());
+            }else{
+                boletim +=(
+                    "CPF: "+super.getCpf()
+                    +System.lineSeparator()
+                    +System.lineSeparator());
+                    for(int i=0;i<this.notas.length;i++){
+                        boletim += (" avaliacao: "+this.notas[i]+" | "+System.lineSeparator());
+                    }
+                    boletim += ("Resultado: Aprovad.o"+System.lineSeparator());
+                    boletim += ("Media final: "+this.calculaMedia()+System.lineSeparator());
+            }
         }
         return boletim;
+        
+
     }
 //#endregion
 }
