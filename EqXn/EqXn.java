@@ -26,7 +26,7 @@ public class EqXn extends Equacao {
 //#endregion
 
     public double calculaXp(double delta){
-        setXp(-(getB()) + (Math.sqrt(delta)) / 2*(getA()));
+        setXp((-(getB()) + (Math.sqrt(delta)))/ 2*(getA()));
         return getXp();
     }
     public double calculaXn(double delta){
