@@ -1,4 +1,4 @@
-package EqXn;
+package aula7.EqXn;
 
 import java.util.Scanner;
 

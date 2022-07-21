@@ -1,4 +1,4 @@
-package EqXn;
+package aula7.EqXn;
 
 public class Delta extends Equacao {
     private double delta;
